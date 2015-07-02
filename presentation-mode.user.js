@@ -15,9 +15,9 @@ function main() {
     var body = document.getElementsByTagName('body');
     if(e.altKey && e.keyCode === 80) {
       if(isPresentationMode === false) {
-        body[0].setAttribute('style', '-webkit-filter:saturate(200%)');
+        body[0].setAttribute('style', '-webkit-filter:saturate(200%);filter:saturate(200%)');
       } else {
-        body[0].setAttribute('style', '-webkit-filter:saturate(100%)');
+        body[0].setAttribute('style', '-webkit-filter:saturate(100%);filter:saturate(100%)');
       }
       isPresentationMode = !isPresentationMode;
       console.info('presentation mode: ' + isPresentationMode);
