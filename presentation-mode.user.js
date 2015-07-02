@@ -20,7 +20,7 @@ function main() {
         body[0].setAttribute('style', '-webkit-filter:saturate(100%)');
       }
       isPresentationMode = !isPresentationMode;
-      console.log('presentation mode: ' + isPresentationMode);
+      console.info('presentation mode: ' + isPresentationMode);
     }
   }
 }
